@@ -16,7 +16,6 @@
 /*颜色*/
 h1{color:green;}
 h2{color:#ee3e80;}
-p{color:rgb(100,100,90);}
 .bgcolor1{background-color:gray;height:100px;}
 .bgcolor2{background-color:#8FBC8F;height:100px;}
 .bgcolor3{background-color:#7D9EC0;height:100px;}
@@ -71,6 +70,36 @@ p{color:rgb(100,100,90);}
 .text17{vertical-align:text-top;}
 .text18{vertical-align:baseline;}
 .text19{vertical-align:text-bottom;}
+/*投影*/
+.text20{background-color:#FFB6C1;color:#4682B4;text-shadow:1px 1px 0px #000000;}
+/*首字母或首行文本*/
+.text21:first-letter{font-size:200px;}
+.text22:first-line{font-weight:bold;}
+/*链接样式*/
+.text23:link{color:red;text-decoration:none;}
+.text24:visited{color:blue;text-decoration:underline;}
+.text25:hover{color:red;text-decoration:underline;}
+.text26:active{color:gray;}
+.text27:focus{color:gray;}
+/*盒子*/
+/*高度限制*/
+.box1{width:400px;line-height:1.4em;font-size:90%;}
+.box2{min-height:10px;max-height:20px;}
+.box3{color:red;border-bottom:1px solid blue;}
+/*内容溢出*/
+.box4{width:400px;max-height:100px;overflow:hidden;border-bottom:1px solid blue;}
+.box5{width:400px;max-height:100px;overflow:scroll;border-bottom:1px solid blue;}
+/*边框(快捷方法)*/
+.box6{width:300px;border-width:3px;border-style:solid;border-color:	#40E0D0}
+.box7{width:300px;border:2px solid #3CB371;}
+/*内边距和外边距*/
+.box8{width:600px;padding:30px 100px 30px 100px;border:2px solid #FF8C00;}
+.box9{width:500px;margin:50px 500px 50px 500px;border:2px solid #FF6347;}
+
+
+
+
+
 
 </style>
 </head>
@@ -192,7 +221,7 @@ p{color:rgb(100,100,90);}
 <p><b>两端：</b></p>
 <p class="text16">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
 </div>
-<!-- 垂直对齐(有问题) -->
+<!-- 垂直对齐 -->
 <div class="text17">
 <p><b>垂直对齐：(有问题)</b></p>
 <p><img src="head1.png" title="think" value="think" weight="50" height="100"/>
@@ -202,8 +231,60 @@ p{color:rgb(100,100,90);}
 <p><img src="head1.png" title="think" value="think" weight="50" height="100"/>
 咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
 </div>
+<!-- 文本缩进 -->
+<div>
+<p><b>文本缩进(text-indent):</b></p>
+<p>将文本放置浏览器以外。。。</p>
+</div>
+<!-- 投影  -->
+<div>
+<p><b>投影：</b></p>
+<p class="text20">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 首字母或首行文本 -->
+<div>
+	<p><b>首字母或首行文本：</b></p>
+	<p class="text21">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="text22">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 链接样式/响应用户 -->
+<div>
+	<p><b>链接样式/响应用户：</b></p>
+	<p>link设置未点击过的样式<a class="text23" href="www.sohu.com">confusing</a></p>
+	<p>visited设置已点击过的样式<a class="text24" href="www.sohu.com">think</a></p>
+	<p>hover鼠标光标设置<a class="text25" href="www.sohu.com">particular</a></p>
+	<p>active点击时设置<a class="text26" href="www.sohu.com">surprising</a></p>
+	<p>focus拥有焦点时生效<a class="text27" href="www.sohu.com">happening</a></p>
+</div>
+<!--------------------- 盒子 ----------------------->
+<!-- 高度限制 -->
+<div>
+	<p><b>高度限制min-height,max-height:</b></p>
+	<p class="box1">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+	<p class="box2 box1 box3">我是一只咸鱼 不想承认 也不能否认</p>
+</div>
+<!-- 内容溢出 -->
+<div>
+	<p><b>内容溢出overflow:</b></p>
+	<p class="box4">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+	<p class="box5">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+</div>
+<!-- 边框border -->
+<div>
+	<p><b>边框border</b></p>
+	<p class="box6">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box7">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 内边距和外边距 -->
+<div>
+	<p><b>内边距和外边距padding,margin:</b></p>
+	<p class="box9">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box8">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
 
-
+<div>
+	<p><b></b></p>
+</div>
 
 
 
