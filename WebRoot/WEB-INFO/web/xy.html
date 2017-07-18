@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- meta 元素(name、content、http-equiv) 
+name包含：description(页面的描述信息会被搜索引擎搜索出来并显示) 
+keywords(关键词) 
+robots(noindex不加入搜索结果、 nofollow加入搜索结果但不收录页面上其他链接)
+http-equiv包含：author(网页设计者)
+pragma(防止了浏览器对页面的缓存)
+expires(指定页面的过期时间)
+content表示这些属性的值-->
+<meta name="" content="" http-equiv=""/>
+<title>咸鱼</title>
+</head>
+
+<body>
+<!----------------第一章 文本------------- -->
+<!-- 标题 -->
+<h1 id="biaoti">主标题</h1>
+<h2>子标题</h2>
+<h3>分段标题</h3>
+<h4>分段标题</h4>
+<h5>分段标题</h5>
+<h6>分段标题</h6>
+<!-- 段落 p -->
+<p>我是一箭咸鱼不想承认也不能否认</p>
+<p>我是一箭咸鱼不想承认也不能否认,不要同情我笨又夸我天真还梦想着翻身</p>
+<!-- 粗体和斜体 b i -->
+<b>粗体b</b>
+<i>斜体i</i>
+<!-- 上标和下标 sup sub -->
+<p>lalalala<sup>sup</sup>lalalallalala</p>
+<p>lalalala<sub>sub</sub>lalalallalala</p>
+<!-- 换行符和水平线(分割线) br hr -->
+<p>奋战20年烧钱上千亿他在全世界围/br</br>堵中替中国拼出又一个世界第一</p>
+<p>奋战20年烧钱上千亿他在全世界围hr<hr/></br>堵中替中国拼出又一个世界第一</p>
+<!-- 加粗和强调(strong默认为粗体) strong em -->
+<p><strong>我是:（strong）</strong>一箭咸鱼不想承认也不能否认</p>
+<p><em>我是（em）:</em>箭咸鱼不想承认也不能否认</p>
+<!-- 引用  blockquote(前面空两个) q(加双引号)-->
+<blockquote cite="http://www.hao123.com/"><p>我是一箭咸鱼不想承认也不能否认p</p><blockquote>
+<p>我说：<q>我是一箭咸鱼不想承认也不能否认q</q>(cite表示引用来源)</p>
+<!-- 缩写词和首字母缩写词 abbr(title表示鼠标停在下划线上显示的内容)-->
+<p>I <abbr title="Professor">am(abbr title特性表示鼠标停在下划线上显示的内容)</abbr> a goog man!</p>
+<!-- 引文和定义(显示为斜体) cite(引用书籍电影研究报告等) dfn(新术语) -->
+<p>我是一箭<cite>咸鱼cite</cite>不想承认也不能否认</p>
+<p>我是一箭<dfn>咸鱼dfn</dfn>不想承认也不能否认</p>
+<!-- 设计者的详细信息(显示为斜体) address -->
+<address>
+<p><a herf="mailto:781047@qq.com">781047@qq.com</a></p>
+<p>天使街23号address</p></address>
+<!-- 内容的修改 ins del s-->
+<p>我是一箭<ins>咸鱼ins</ins>不想承认也不能<del>否认del</del>,不要同情我<s>又s</s>夸我天真还梦想着翻身</p>
+
+
+<!----------------- 第二章 列表 ------------->
+<!-- 有序列表 ol li type(定义数字编号类型)-->
+<ol type="">
+<li>我是一箭咸鱼</li>
+<li>不想承认</li>
+<li>也不能否认</li>
+<li>不要同情我笨</li>
+<li>又夸我天真</li>
+<li>还梦想着翻身</li>
+</ol>
+<!-- 无序列表 ul li type(定义符号编号类型)-->
+<ul type="">
+<li>我是一箭咸鱼</li>
+<li>不想承认</li>
+<li>也不能否认</li>
+<li>不要同情我笨</li>
+<li>又夸我天真</li>
+<li>还梦想着翻身</li>
+</ul>
+<!-- 定义列表  dl dt dd  (dt包含需要定义的词 dd表示定义词的解释)-->
+<dl>
+<dt>咸鱼dt</dt>
+<dd>不想承认dd</dd>
+<dd>也不能否认dd</dd>
+</dl>
+<!-- 嵌套列表 -->
+<ul type="">
+<li>我是一箭咸鱼</li>
+<li>不想承认</li>
+<li>也不能否认
+<ul type="">
+<li>我是一箭咸鱼</li>
+<li>不想承认</li>
+<li>也不能否认</li>
+<li>不要同情我笨</li>
+<li>又夸我天真</li>
+<li>还梦想着翻身</li>
+</ul>
+</li>
+<li>不要同情我笨</li>
+<li>又夸我天真</li>
+<li>还梦想着翻身</li>
+</ul>
+
+<!------------------- 第三章 链接 --------------->
+<!-- 指向其他网站的链接 (绝对路径) -->
+<ul type="">
+<li><a href="http://www.hao123.com/">百度一下</a></li>
+<li><a href="http://www.taobao.com/">我淘！我喜欢</a></li>
+<li><a href="http://www.sina.com/">新浪微博</a></li>
+<li><a href="http://www.jingdong.com/">京东购物</a></li>
+</ul>
+<!-- 指向同一网站的其他页面 (相对路径)-->
+<!-- ...... -->
+<!-- EMAIL链接 -->
+<a href="mailto:781047225@qq.com">邮件联系</a>
+<!-- 在新窗口中打开链接 -->
+<a href="http://www.hao123.com/" target="_blank">百度一下</a>
+<!-- 链接到当前页面的某个特定位置（回到顶部、底部等） -->
+<a href="#biaoti">回到顶部</a>
+<!-- 链接到其他页面的某个特定位置 -->
+<a href="http://www.hao123.com/ #box-weibobottom">百度底部（通过#id跳到指定位置）</a>
+
+<!---------------- 第四章 图像 ------------------>
+<!-- 添加图像 img (必须包含src和alt，title表示鼠标悬浮时对图像的说明)-->
+<img src="head1.png" alt="" title="think"/>
+<!-- 图像的高度和宽度 -->
+<img src="head1.png" alt="" title="think" width="600" height="200"/>
+<!-- 图像的位置以及水平对齐和垂直对齐 align(left right top middle button) -->
+<p><img src="head1.png" alt="" title="think" width="600" height="200"/>我是一箭咸鱼不想承认也不能否认要同情我笨又夸我天真还梦想着翻身</p>
+<p><img src="head1.png" alt="" align="middle" title="think" width="600" height="200"/>我是一箭咸鱼不想承认也不能否认要同情我笨又夸我天真还梦想着翻身</p>
+<p><img src="head1.png" alt="" align="left" title="think" width="600" height="200"/>我是一箭咸鱼不想承认也不能否认要同情我笨又夸我天真还梦想着翻身</p></br></br></br></br></br></br></br></br></br>
+<!-- 图形和图形说明 figure figcaption -->
+<!--  
+<figure>
+<img src="head1.png" alt="" title="think" width="600" height="300"/></br>
+<figcaption>think图片描述</figcaption>
+</figure>
+-->
+
+<!--------------------- 第五章 表格 ---------------->
+<!-- 基本的表结构 table tr td -->
+<table>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>6</td>
+	</tr>
+</table>
+<!--  表格的标题 th scope:rows/col表示行、列标题-->
+<table>
+	<tr>
+		<th></th>
+		<th scope="col">星期一</th>
+		<th scope="col">星期二</th>
+	</tr>
+	<tr>
+		<th scope="rows">x</th>
+		<td>5</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<th scope="rows">y</th>
+		<td>6</td>
+		<td>9</td>
+	</tr>
+</table>
+<!-- 跨行跨列 rowspan colspan-->
+<table>
+	<tr>
+		<th></th>
+		<th scope="col">星期一</th>
+		<th scope="col">星期二</th>
+	</tr>
+	<tr>
+		<th scope="rows">x</th>
+		<td rowspan="2">5</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<th scope="rows">y</th>
+		<td colspan="2">6</td>
+		<td>9</td>
+	</tr>
+</table>
+<!-- 长表格 thead tbody tfoot -->
+<table cellpadding="10">
+<thead>
+	<tr>
+		<th scope="col">Date</th>
+		<th scope="col">WeekDay</th>
+		<th scope="col">Moon</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="rows" >0711</th>
+		<td scope="rows">5</td>
+		<td scope="rows">good</td>
+	</tr>
+	<tr>
+		<th scope="rows">0712</th>
+		<td scope="rows">6</td>
+		<td scope="rows">good</td>
+	</tr>
+		<tr>
+		<th scope="rows">0714</th>
+		<td scope="rows">7</td>
+		<td scope="rows">good</td>
+	</tr>
+		<tr>
+		<th scope="rows">0715</th>
+		<td scope="rows">1</td>
+		<td scope="rows">good</td>
+	</tr>
+		<tr>
+		<th scope="rows">0716</th>
+		<td scope="rows">2</td>
+		<td scope="rows">good</td>
+	</tr>
+		<tr>
+		<th scope="rows">0717</th>
+		<td scope="rows">3</td>
+		<td scope="rows">good</td>
+</tbody>
+<tfoot>
+		<th scope="rows" colspan="3">0711</th>
+</tfoot>
+</table>
+
+
+<!----------- 第六章 表单 ------------>
+<!-- 表单结构及控件 form-->
+<form action="" method="post">
+<!-- 单行文本框 input -->
+<p>admin:
+<input type="text" name="user" size="20" maxlength="8"/></p>
+<!-- 密码框 input -->
+<p>password:
+<input type="password" name="password" size="20" maxlength="8"/></p>
+<!-- 多行文本框 textarea -->
+<p>content:</p>
+<textarea name="textarea" rows="10" col="80">enter your content...</textarea>
+<!-- 单选安钮 input (checked表示默认选择)-->
+<p>单选:
+<input type="radio" name="radio" value="1" checked="checked"/>1
+<input type="radio" name="radio" value="2" />2
+<input type="radio" name="radio" value="3" />3
+</p>
+<!-- 复选框 input checkbox -->
+<p>多选或者单选:
+<input type="checkbox" name="checkbox" value="1" checked="checked"/>1
+<input type="checkbox" name="checkbox" value="2" />2
+<input type="checkbox" name="checkbox" value="3" />3
+</p>
+<!-- 下拉列表框 select option multiple size表示显示的可以多选 可以选几个-->
+<p>
+weekday
+<select name="today"multiple="" size="5" >
+	<option value="Mon">Mon</option>
+	<option value="Tus">Tus</option>
+	<option value="Wen">Wen</option>
+	<option value="Thir">Thir</option>
+	<option value="Fir">Fir</option>
+</select>
+</p>
+<!-- 文件上传 -->
+<p>附件上传:
+<input type="file" name="fujian"/></p>
+<!-- 提交按钮 -->
+<input type="submit" name="submit" value="上传"/>
+<!-- 图像按钮 -->
+<input type="image" src="head1.png" width="50" height="25" name="image"/>
+<!-- 按钮和隐藏控件 -->
+<button>button</button>
+<input type="hidden" value="hide" name=""/></br>
+<!-- 标签表单控件  lable  for 表示label对应的控件-->
+<label>登录：<input type="text" name="user" size="20" maxlength="8"/> </label></br>
+选择性别：<input id="man" name="man" value="M"  type="radio"/><label for="man">男</label>
+<input id="woman" name="woman" value="W"  type="radio"/><label for="woman">女</label>
+<!-- 组合表单元素 fieldset 长表单  legend表示表单的说明-->
+<fieldset>
+<legend>联系我们</legend>
+<label>Email：</label></br>
+<input type="text" id="email"  name="email"/></br>
+<label>Phone：</label></br>
+<input type="text" id="phone"  name="phone"/></br>
+<label>Adress：</label></br>
+<input type="text" id="adress"  name="adress"/></br>
+</fieldset>
+<!-- 表单验证 只有谷歌和火狐支持HTML5表单验证 required="required"-->
+<label for="user">用户名：<input type="text" name="user" id="user" size="20" maxlength="8" /> </label></br>
+<label for="psw">密码：<input type="password" name="psw" id="psw" size="20" maxlength="8" /> </label></br>
+<label for="login"> <input type="submit" id="login" name="login" value="登录"/></label></br>
+<!-- 日期控件 -->
+<label for="d">选择日期：<input type="date"  id="d" name="ds" /></label></br>
+<!-- 电子邮件和URL输入控件 email url-->
+<label for="email">Email:
+<input type="email" name="email"/></label>
+<label for="elogin"> <input type="submit" id="elogin" name="login" value="提交"/></label></br>
+<label for="url">URL:<input type="url" name="url"/></label>
+<label for="ulogin"> <input type="submit" id="ulogin" name="login" value="提交"/></label></br>
+<!-- 搜索输入控件 search-->
+<input type="search" id="baidu" name="baidu" placeholder="输入关键词"/>
+<input type="submit" id="sousuo" name="baidu" value="百度一下"/>
+<!-- 元素特性 -->
+<p>块级元素：h1、p、ul、li</p>
+<p>内联元素：a、b、em、img</p>
+<p>Div：将一组元素集合到一个块级元素当中（换行）</p>
+<p>span：将一组元素集合到一个内联元素当中 （不换行）</p>
+<p>内联框架：firame </br>html5不支持 scrolling:yes、no、auto 表示是否可以滚动 </br>html5不支持 frameborder：0、1表示是否显示边框 </br>新特性 seamless:表示不希望出现滚动条</br><iframe width="200" height="300" src=="http://www.google.cn/maps? q=moma+new+york &amp;output=embed" ></iframe></p>
+</form>
+<!-------------- 第七章 视频和音频----------------->
+<!-- 向网页中添加flash影片 -->
+<p><b>向网页中添加flash影片</b></br>
+1、将flash文件转换成flv文件（搜索视频转换器）；</br>
+2、找一个可以播放此类型文件的播放器；</br>
+3、从浏览器下载引入flash的js，在head里引用；</br>
+4、在js里调用swfobject.embedSWF("文件位置","对应div的id","长","宽","支持flash的最低版本")</br>
+<!-- 向网页中添加视频 video-->
+<p><b>向网页中添加视频</b></br>
+video支持的格式，为了浏览器兼容至少准备H264和WebM两种格式；</br>
+</p>
+<p><b>video特性</b></br>
+src表示指定视频的路径；</br>
+poster表示在视频加载之前画面上显示的一张图片；</br>
+controls表示需要浏览器提供默认的播放器；</br>
+autoplay表示是否自动播放；</br>
+loop表示是否循环播放；</br>
+preload(none、auto、matadata)表示用户在点击播放按钮前是否自动加载视频 none表示不必、auto表示页面加载时加载、metadata表示浏览器只需要收集少量视频信息。</br>
+</p>
+<!--   <video src=="" poster="" width="" height="" controls="" autoplay="" loop="" preload=""></video>-->
+<!-- 多个视频源 -->
+<p>source:src表示视频路径；</br>
+type表示告诉浏览器视频的格式</br>
+codecs表示指定视频编码器</br></p></br>
+<!-- <video src=="" poster="" width="" height="" controls="" autoplay="" loop="" preload="">
+<source src=="" type=""; codecs="" />
+<source src=="" type=""; codecs="" />
+</video>
+ -->
+<!-- 向网页中添加音频 -->
+<p><b>添加音频</b></br>
+flash MP3播放器：和添加video视频一样</br>
+<p><b>audio:和添加视频一样</b><p>
+<!-- <audio src==""  width="" height="" controls="" autoplay="" loop="" preload=""></audio>   -->
+</p>
+</body>
+</html>

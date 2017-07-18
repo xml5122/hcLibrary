@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>一只咸鱼</title>
+<meta http-equiv="author" content="咸鱼"/>
+<!-- 使用外部css用link  href表示文件路径 type表示文档类型text/css或者text/javascript rel表示当前html页面与被链接文件的关系-->
+<link href="" type="" rel="" />
+<!-- 使用内部css -->
+<style type="text/css">
+.page{border:1px solid red;
+	background-color:red;
+	padding:inherit;}
+.cc{
+	color:red;
+}
+/*颜色*/
+h1{color:green;}
+h2{color:#ee3e80;}
+p{color:rgb(100,100,90);}
+.bgcolor1{background-color:gray;height:100px;}
+.bgcolor2{background-color:#8FBC8F;height:100px;}
+.bgcolor3{background-color:#7D9EC0;height:100px;}
+/*透明度*/
+.opacity1{background-color:yellow;height:100px;opacity:0.5;}
+.opacity2{background-color:rgb(200,200,169);height:100px;opacity:0.9;}
+/*色调饱和度和明度*/
+.hsl1{background-color:#EE8262;height:100px;}
+.hsl2{background-color:#EE8262;height:100px;background-color:hsl(0,0,50%);}
+.hsla1{background-color:#FFEC8B;height:100px;}
+.hsla2{background-color:#FFEC8B;height:100px;background-color:hsla(0,100%,100%,0.5);}
+/*字体*/
+.font1{font-family:candara;}
+.font2{font-family:YouYuan;}
+/*字体大小*/
+.font3{font-family:YouYuan;font-size:12px;}
+.font4{font-family:YouYuan;font-size:200%;}
+.font5{font-family:YouYuan;font-size:1.3em;}
+/*
+表示通过指定地址下载字体再使用 src为下载路径 format表示下载字体的文件格式 不同的浏览器支持的字体格式不同，网站可以转换 还可以生成css代码
+@font-face1{font-family:'xxx';src:url('') format:(''),
+							src:url('') format:(''),
+							src:url('') format:('');}							
+.font6{font-family:xxx,Arial,Georgia;}
+*/
+/*粗体和斜体*/
+.font7{font-family:YouYuan; font-weight:bold;}
+.font8{font-family:YouYuan;font-style:italic;}
+.font9{font-family:YouYuan;font-style:oblique;}
+/*大写和小写*/
+.text1{text-transform:uppercase;}
+.text2{text-transform:lowercase;}
+.text3{text-transform:capitalize;}
+/*下划线和删除线*/
+.text4{text-decoration:none;}
+.text5{text-decoration:underline;}
+.text6{text-decoration:overline;}
+.text7{text-decoration:line-through;}
+.text8{text-decoration:blink;}
+/*行间距*/
+.text9{line-height:1.4em;}
+.text10{line-height:1.9em;}
+/*字母间距和单词间距*/
+.text11{letter-spacing:0.2em;}
+.text12{word-spacing:1em;}
+/*对齐方式*/
+.text13{text-align:left;}
+.text14{text-align:right;}
+.text15{text-align:center;}
+.text16{text-align:justify;}
+/*垂直对齐*/
+.text17{vertical-align:text-top;}
+.text18{vertical-align:baseline;}
+.text19{vertical-align:text-bottom;}
+
+</style>
+</head>
+
+<body>
+<!-- class常用选择器 -->
+<p><b>class常用选择器：</b>
+<ol>
+<li>*{}应用于页面所有元素</li>
+<li>h1,h2,h3{}应用于h1、h2和h3元素</li>
+<li>.note{}应用于class="note"的元素</li>
+<li>p.note{}应用于class="note"的p元素</li>
+<li>#lll{}应用于id="lll"的元素</li>
+<li>li>a{}应用于父元素为li的a元素</li>
+<li>p a{}应用于p中的所有a元素</li>
+<li>h1+p{}应用于h1元素后第一个p元素</li>
+<li>h1~p{}h1的p兄弟元素</li>
+</ol>
+</p>
+<!-- css优先级 -->
+<p><b>css优先级：</b>
+<ol>
+<li>就近原则：第二个优先第一个</li>
+<li>具体性原则：具体优先于不具体（p b>p）</li>
+<li>重要性：在属性值后面添加 ！important表示优先于同级</li>
+</ol>
+</p>
+<!-- 继承 -->
+<p>并不是所有的属性都会被继承，如果需要可以使用inherit强制继承</p>
+<div class="page">
+<h1>咸鱼</h1>
+<p>我是一箭咸鱼，不想承认，也不能否认</p>
+<p>不要同情我笨又夸我天真，还梦想着翻身</p>
+</div>
+<!----------------- 颜色 ------------>
+<!--前景颜色color：分别可以用名称、二进制和rgb表示-->
+<div>
+<p><b>字体颜色：</b></p>
+<h1>我是一箭咸鱼</h1>
+<h2>我是一箭咸鱼</h2>
+<p>我是一箭咸鱼</p>
+</div>
+<!--  背景色 background-color -->
+<p><b>背景色：</b></p>
+<div class="bgcolor1"><p>灰色</p></div>
+<div class="bgcolor2"><p>绿色</p></div>
+<div class="bgcolor3"><p>蓝色</p></div>
+<!-- 透明度 rgba、opacity：0~1-->
+<div class="opacity1"><p>黄色透明</p></div>
+<div class="opacity2"><p>啥色透明</p></div>
+<!-- css3:HSL和HSLA 色调、饱和度、明度 浏览器不一定都行得通-->
+<p><b>色调、饱和度、明度</b></p>
+<div class="hsl1">1<p></p></div>
+<div class="hsl2"><p>2</p></div>
+<div class="hsla1"><p>3</p></div>
+<!----------------- 字体 ---------------->
+<!-- 字体选用 font-family-->
+<div>
+<p><b>字体：</b></p>
+<p class="font1">不要同情我笨又夸我天真，还梦想着翻身</p>
+<p class="font2">不要同情我笨又夸我天真，还梦想着翻身</p>
+</div>
+<!-- 字体大小 font-size 表示为像素、百分数、EM值-->
+<div>
+<p><b>字体大小：</b></p>
+<p class="font3">我是一箭咸鱼，不想承认，也不能否认</p>
+<p class="font4">我是一箭咸鱼，不想承认，也不能否认</p>
+<p class="font5">我是一箭咸鱼，不想承认，也不能否认</p>
+</div>
+<!-- 粗体 -->
+<div>
+<p><b>粗体：</b></p>
+<p class="font2">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="font7">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 斜体 -->
+<div>
+<p><b>斜体：</b></p>
+<p class="font8">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="font9">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 大写和小写 -->
+<div>
+<p><b>大写和小写：</b></p>
+<p class="text1">Today is a sunny day !</p>
+<p class="text2">Today is a sunny day !</p>
+<p class="text3">Today is a sunny day !</p>
+</div>
+<!-- 下划线和删除线 -->
+<div>
+<p><b>下划线和删除线：</b></p>
+<p class="text4">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="text5">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="text6">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="text7">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p class="text8">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 行间距 -->
+<div>
+<p><b>行间距：</b></p>
+<p class="text9">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+<p class="text10">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+</div>
+<!-- 字母间距和单词间距 -->
+<div>
+<p><b>字母间距和单词间距：</b></p>
+<p class="text11">Life is full of confusing and disordering Particular time,a particular location,Do the arranged thing of ten million time in the brain,Step by step ,the life is hard to avoid delicacy and stiffness No enthusiasm forever,No unexpected happening of surprising and pleasing So,only silently ask myself in mind Next happiness,when will come?</p>
+<p class="text12">Life is full of confusing and disordering Particular time,a particular location,Do the arranged thing of ten million time in the brain,Step by step ,the life is hard to avoid delicacy and stiffness No enthusiasm forever,No unexpected happening of surprising and pleasing So,only silently ask myself in mind Next happiness,when will come?</p>
+</div>
+<!-- 对齐方式 -->
+<div>
+<p><b>对齐方式：</b></p>
+<p><b>左：</b></p>
+<p class="text13">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+<p><b>右：</b></p>
+<p class="text14">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+<p><b>中：</b></p>
+<p class="text15">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+<p><b>两端：</b></p>
+<p class="text16">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身 咸鱼就算翻身 还是只咸鱼 输得也诚恳 至少到最后  我还有咸鱼不腐烂的自尊 我没有任何天分 我却有梦的天真 我是傻 不是蠢 我将会证明 用我的一生 我 如果有梦 有没有错 错过才会更加明白 明白坚持是什么 我 如果有梦 梦要够疯 够疯才能变成英雄 总会有一篇 我的传说</p>
+</div>
+<!-- 垂直对齐 -->
+<div class="text17">
+<p><b>垂直对齐：(有问题)</b></p>
+<p><img src="head1.png" title="think" value="think" weight="50" height="100"/>
+咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p><img src="head1.png" title="think" value="think" weight="50" height="100"/>
+咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+<p><img src="head1.png" title="think" value="think" weight="50" height="100"/>
+咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
