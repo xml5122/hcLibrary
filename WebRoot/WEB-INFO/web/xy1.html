@@ -95,8 +95,31 @@ h2{color:#ee3e80;}
 /*内边距和外边距*/
 .box8{width:600px;padding:30px 100px 30px 100px;border:2px solid #FF8C00;}
 .box9{width:500px;margin:50px 500px 50px 500px;border:2px solid #FF6347;}
-
-
+/*内容居中*/
+.box10{width:600px;padding:30px 100px 30px 100px;border:2px solid #FF8C00;}
+.box11{width:500px;margin:50px auto 50px auto;border:2px solid #FF6347;}
+.box12{text-align:center;}
+/*内联元素与块级元素的转换*/
+.box13{width:600px;margin-right:50px;display:inline;}
+.box14{width:600px;margin-right:50px;display:block;}
+.box15{width:600px;margin-right:50px;display:inline-block;}
+/*盒子的隐藏*/
+.box16{width:600px;padding:30px 100px 30px 100px;border:2px solid #FF8C00;visibility:visible;}
+.box17{width:600px;padding:30px 100px 30px 100px;border:2px solid #FF8C00;visibility:hidden;}
+/*边框图像*/
+.box18{width:600px;padding:30px 100px 30px 100px;border:30px solid #FF8C00;border-image:url("head1.png") 11 11 11 11 stretch;}
+.box19{width:600px;padding:30px 100px 30px 100px;border:30px solid #FF8C00;border-image:url("head1.png") 11 11 11 11 repeat;}
+/*盒子的投影*/
+.box20{width:300px;padding:30px 100px 30px 100px;border:15px solid #FF8C00;border-image:url("head1.png") 11 11 11 11 stretch;box-shadow:-5px -5px #FFFF00;}
+.box21{width:300px;padding:30px 100px 30px 100px;border:15px solid #FF8C00;border-image:url("head1.png") 11 11 11 11 stretch;box-shadow:5px 5px #FFFF00;}
+.box22{width:300px;padding:30px 100px 30px 100px;border:15px solid #FF8C00;border-image:url("head1.png") 11 11 11 11 stretch;box-shadow:inset 5px 5px 5px #FFFF00;}
+/*圆角*/
+.box23{border-radius:10px 10px 10px 10px;}
+/*椭圆形*/
+.box24{width:100px;padding:45px 0px 45px 0px;text-align:center;border:5px solid #F08080;}
+.box25{width:100px;padding:45px 0px 45px 0px;text-align:center;border:5px solid #F08080;border-top-right-radius:80px 50px;}
+.box26{width:100px;padding:45px 0px 45px 0px;text-align:center;border:5px solid #F08080;border-radius:100px;}
+.box27{}
 
 
 
@@ -281,11 +304,59 @@ h2{color:#ee3e80;}
 	<p class="box9">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
 	<p class="box8">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
 </div>
-
+<!-- 内容居中 -->
 <div>
-	<p><b></b></p>
+	<p><b>内容居中text-align：</b></p>
 </div>
 
+<div class="box12">
+	<p><b></b></p>
+	<p class="box10">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身</p>
+	<p class="box11">我是一只咸鱼 不想承认 也不能否认 不要同情我笨 又夸我天真 还梦想着翻身</p>
+</div>
+<!-- 内联元素与块级元素的转换 -->
+<div>
+	<p><b>内联元素与块级元素的转换display:</b></p>
+	<p class="box13">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box15">我是一只咸鱼 不想承认 也不能否认</p>
+	<span class="box14">我是一只咸鱼</span>
+	<span class="box14">不想承认</span>
+</div>
+<!-- 盒子的隐藏 -->
+<div>
+	<p><b>盒子的隐藏 visibility:</b></p>
+	<ul>
+		<li class="box16">我是一只咸鱼</li>
+		<li>不想承认</li>
+		<li class="box17">也不能否认</li>
+	</ul>
+</div>
+<!-- css3边框图像 -->
+<div>
+	<p><b>边框图像 border=image:</b></p>
+	<p>图片的url、切割图片的位置、如何处理直边（stretch伸展图片、repeat重复图片、round调整图片至刚好填满边框）</p>
+	<p class="box18">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box19">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 盒子的投影 -->
+<div>
+	<p><b>盒子的投影 box-shadow:</b></p>
+	<p class="box20">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box21">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+	<p class="box22">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 圆角 -->
+<div>
+	<p><b>圆角 border-radius:</b></p>
+	<p class="box8 box23">咸鱼就算翻身，还是只咸鱼，输得也诚恳</p>
+</div>
+<!-- 椭圆形 -->
+<div>
+	<p><b>椭圆形 border-radius： </b></p>
+	<p class="box24"></p>
+	<p class="box25"></p>
+	<p class="box26"></p>
+</div>
 
 
 
